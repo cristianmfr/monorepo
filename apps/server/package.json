@@ -1,0 +1,23 @@
+{
+  "name": "@monorepo/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysia/cors": "^1.4.3",
+    "@monorepo/database": "*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "elysia": "^1.4.32",
+    "envalid": "^9.0.0",
+    "ioredis": "catalog:",
+    "logixlysia": "^6.14.0"
+  },
+  "devDependencies": {
+    "@monorepo/tsconfig": "*",
+    "@types/bun": "catalog:",
+    "typescript": "catalog:"
+  }
+}

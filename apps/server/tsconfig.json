@@ -1,0 +1,9 @@
+{
+  "extends": "@monorepo/tsconfig/base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

@@ -5,6 +5,7 @@
     "": {
       "name": "monorepo",
       "devDependencies": {
+        "@monorepo/tsconfig": "*",
         "@types/bun": "catalog:",
         "oxfmt": "^0.75.0",
         "oxlint": "^1.90.0",
@@ -12,6 +13,9 @@
         "typescript": "catalog:",
         "ultracite": "8.3.0",
       },
+    },
+    "packages/tsconfig": {
+      "name": "@monorepo/tsconfig",
     },
   },
   "catalog": {
@@ -31,6 +35,8 @@
     "@clack/core": ["@clack/core@1.6.0", "", { "dependencies": { "fast-string-width": "^3.0.2", "fast-wrap-ansi": "^0.2.0", "sisteransi": "^2.0.0" } }, "sha512-4GZynIB2IIe431odxesswvWTCP6orvqd6e2b07b3VFWBQRqUqIHc/EPIZwFoKS692QBp+ooPuXKaJV8g4kXuYA=="],
 
     "@clack/prompts": ["@clack/prompts@1.9.0", "", { "dependencies": { "@clack/core": "1.6.0", "fast-string-width": "^3.0.2", "fast-wrap-ansi": "^0.2.0", "sisteransi": "^2.0.0" } }, "sha512-tEj8X2No2A1c9NDnZECxiiJ8TP3vmFlN9tLlLeSaMqVW4tUmVG2R4qpv/eP4zymWxnymYLkLcIYVV0VcWj3RCQ=="],
+
+    "@monorepo/tsconfig": ["@monorepo/tsconfig@workspace:packages/tsconfig"],
 
     "@nodelib/fs.scandir": ["@nodelib/fs.scandir@2.1.5", "", { "dependencies": { "@nodelib/fs.stat": "2.0.5", "run-parallel": "^1.1.9" } }, "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="],
 
